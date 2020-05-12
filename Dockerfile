@@ -2,7 +2,7 @@ FROM mcr.microsoft.com/dotnet/core/aspnet:3.0
 
 RUN apt-get update
 
-WORKDIR /release/netcoreapp3.1
+WORKDIR /app
 COPY . ./
 
 ENTRYPOINT ["dotnet", "Thaumatec.Web.dll"]
