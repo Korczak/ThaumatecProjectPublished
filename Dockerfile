@@ -5,4 +5,4 @@ RUN apt-get update
 WORKDIR /app
 COPY . ./
 
-ENTRYPOINT ["dotnet", "Thaumatec.Web.dll"]
+ENTRYPOINT ["dotnet", "app/Thaumatec.Web.dll"]
