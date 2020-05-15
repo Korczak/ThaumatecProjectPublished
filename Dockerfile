@@ -1,8 +1,6 @@
-FROM mcr.microsoft.com/dotnet/core/aspnet:3.0
-
-RUN apt-get update
+FROM mcr.microsoft.com/dotnet/core/sdk:3.1
 
 WORKDIR /app
-COPY . ./
+COPY app/ ./
 
-ENTRYPOINT ["dotnet", "app/Thaumatec.Web.dll"]
+ENTRYPOINT ["dotnet", "Thaumatec.Web.dll"]
